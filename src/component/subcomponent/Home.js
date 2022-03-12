@@ -95,7 +95,7 @@ const Home = () => {
         {
           autoAlpha: 1,
           y: '0',
-          duration: 2,
+          duration: 1,
         },
         '<',
       )
@@ -141,11 +141,11 @@ const Home = () => {
           <div className="thirdtext"> Portfolio website.</div>
         </div>
       </div>
-      <div className="">
+      <div className="MainHome">
         <div className="DivideDiv Home2 TitleDescription  ">
           <div className="container TitleDiv t-2">
-            <div className="text-left">
-              <span className="cyan Nameis">Hi, my Name is</span>
+            <div className=" Nameis">
+              <span className="cyan ">Hi, my Name is</span>
             </div>
             <h2 className="white mainfont Title  ">Dharmik Upadhyay</h2>
             <div className="Typing-effect My-Info">

@@ -8,16 +8,14 @@ import Navbar from './subcomponent/Navbar'
 import MyExprience from '../MyExprience'
 const Homescreen = () => {
   return (
-    <div className="">
+    <div>
       <Navbar />
-      <div className="container">
-        <Home />
-        <About />
-        {/* <MyExprience /> */}
-        <Projectscreen />
-        <RightNavbar />
-        <Contact />
-      </div>
+      <Home />
+      {/* <About /> */}
+      {/* <MyExprience /> */}
+      <Projectscreen />
+      <RightNavbar />
+      <Contact />
     </div>
   )
 }

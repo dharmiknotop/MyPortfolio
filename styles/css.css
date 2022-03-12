@@ -175,11 +175,13 @@
 }
 
 .textalignment {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 111111;
 }
 .under {
   text-decoration-color: cyan;
@@ -293,7 +295,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
   height: 50px;
   justify-content: space-between;
@@ -323,18 +325,17 @@ header li a {
   color: white;
   text-decoration: none;
 }
+.Nameis {
+  text-align: left;
+}
 @media only screen and (max-width: 360px) {
   .DivideDiv {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: unset;
+    display: block;
   }
-  header li {
+  nav {
     display: none;
   }
-  .container {
-    width: 100vw;
-  }
+
   .TitleDiv {
     margin-top: 20vw;
   }
@@ -356,6 +357,47 @@ header li a {
   }
   .AboutMe {
     margin-top: 5rem;
+  }
+  .ProjectRAnimation,
+  .ProjectAnimation {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .projectTitle,
+  .AboutMe {
+    text-align: center;
+  }
+  .Title {
+    font-size: 3rem;
+  }
+  .Typing-effect > span,
+  .Typing-effect > .Typewriter {
+    font-size: 1.5rem;
+  }
+  .Typing-effect > .Typewriter {
+    margin-left: 15vw;
+  }
+  .Myimg {
+    height: 40vh;
+  }
+  .TechIcon {
+    padding: 0;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .MainHome > .DivideDiv {
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  div > h1 > p {
+    font-size: 1em !important;
+  }
+  .slider div {
+    width: 100vw;
+    font-size: 2rem !important;
   }
 }
 /* Myexprience */

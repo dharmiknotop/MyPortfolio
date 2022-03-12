@@ -12,7 +12,7 @@ body {
   font-family: 'Hubballi', cursive;
 }
 .container {
-  padding: 0 5vw 0 5vw;
+  margin: 0 5vw 0 5vw;
 }
 .row {
   display: flex;
