@@ -279,13 +279,19 @@ header li a {
 .Nameis {
   text-align: left;
 }
+.About {
+  height: 80vh;
+}
 @media only screen and (max-width: 400px) {
+  .About {
+    height: 50vh;
+  }
   .DivideDiv {
     display: block;
   }
   .AboutImg {
     width: 80%;
-    height: 50%;
+    height: 80%;
   }
   /* .DivideStack {
     display: grid !important;

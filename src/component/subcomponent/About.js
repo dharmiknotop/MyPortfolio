@@ -76,8 +76,8 @@ const About = () => {
         </h1>
 
         <div
-          className="DivideDiv "
-          style={{ fontSize: '1.4rem', fontWeight: '800', height: '80vh' }}
+          className="DivideDiv About"
+          style={{ fontSize: '1.4rem', fontWeight: '800' }}
         >
           <div className="AboutDiv d-flex justify-content-center align-items-center ">
             <div className="AboutImg "></div>
