@@ -18,7 +18,7 @@
 }
 .AboutDiv {
   height: 100%;
-
+  font-size: 1.4rem;
   margin: 0 1rem;
 }
 .AboutImg {
@@ -282,6 +282,12 @@ header li a {
 .About {
   height: 80vh;
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 @media only screen and (max-width: 400px) {
   .About {
     height: 50vh;
@@ -292,6 +298,9 @@ header li a {
   .AboutImg {
     width: 80%;
     height: 80%;
+  }
+  .AboutDiv {
+    font-size: 1rem;
   }
   /* .DivideStack {
     display: grid !important;

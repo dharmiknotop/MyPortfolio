@@ -12,7 +12,7 @@ const Contact = () => {
           Contact me on :{' '}
         </p>
       </h1>{' '}
-      <div>
+      <div className="contact">
         {' '}
         <p className="t-1 d-flex align-items-center">
           <BsTelephone color="lightGreen " style={{ paddingRight: '1rem' }} />{' '}
