@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { gsap } from 'gsap/dist/gsap'
 import Techicon from './Techicon'
+import Image from 'next/image'
 const RightProjects = ({
   projectName,
   Projectinfo,
@@ -73,7 +74,7 @@ const RightProjects = ({
             >
               <div className="overlay"></div>
               <div className="BorderOverlay"></div>
-              <img src={Projectimage} alt="" />
+              <img src="/Capture.JPG" width="15rem" height="14rem" />
             </div>
           </div>
           <div className="  ProjectRAnimation">

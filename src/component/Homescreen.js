@@ -11,9 +11,11 @@ const Homescreen = () => {
     <div>
       <Navbar />
       <Home />
-      {/* <About /> */}
       {/* <MyExprience /> */}
+      <About />
+
       <Projectscreen />
+
       <RightNavbar />
       <Contact />
     </div>

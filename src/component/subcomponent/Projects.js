@@ -88,7 +88,7 @@ const Projects = ({
             >
               <div className="overlay"></div>
               <div className="BorderOverlay"></div>
-              <img src={Projectimage} alt="" />
+              <img src="./Capture.JPG" alt="" />
             </div>
           </div>
         </div>

@@ -1,82 +1,31 @@
 .Myimg {
-  width: 100%;
-  height: 70vh;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png');
+  width: 75%;
+  height: 60vh;
+  background-image: url('../public/Title.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   visibility: hidden;
 }
+.AboutImg {
+  width: 75%;
+  height: 60vh;
+  background-image: url('../public/MyImg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  visibility: hidden;
+}
+.AboutDiv {
+  height: 100%;
 
-.t-block {
-  width: 33.33%;
-  height: 33.33%;
-  position: absolute;
-  z-index: 1;
+  margin: 0 1rem;
 }
-.t-block:nth-child(1) {
-  left: 0;
-  top: 0;
-}
-.t-block:nth-child(2) {
-  left: 33.333%;
-  top: 0;
-}
-.t-block:nth-child(3) {
-  left: 66.666%;
-  top: 0;
-}
-.t-block:nth-child(4) {
-  left: 0;
-  top: 33.333%;
-}
-.t-block:nth-child(5) {
-  left: 33.333%;
-  top: 33.333%;
-}
-.t-block:nth-child(6) {
-  left: 66.666%;
-  top: 33.333%;
-}
-.t-block:nth-child(7) {
-  left: 0;
-  top: 66.666%;
-}
-.t-block:nth-child(8) {
-  left: 33.333%;
-  top: 66.666%;
-}
-.t-block:nth-child(9) {
-  left: 66.666%;
-  top: 66.666%;
-  display: inline-block;
-}
-.t-block:nth-child(1):hover ~ .Myimg {
-  transform: rotateX(-20deg) rotateY(-20deg) rotateZ(-5deg) !important;
-}
-.t-block:nth-child(2):hover ~ .Myimg {
-  transform: rotateX(-20deg) rotateY(0deg) !important;
-}
-.t-block:nth-child(3):hover ~ .Myimg {
-  transform: rotateX(-20deg) rotateY(-20deg) rotateZ(1deg) !important;
-}
-.t-block:nth-child(4):hover ~ .Myimg {
-  transform: rotateX(0deg) rotateY(20deg) !important;
-}
-.t-block:nth-child(5):hover ~ .Myimg {
-  transform: rotateX(0deg) rotateY(0deg) !important;
-}
-.t-block:nth-child(6):hover ~ .Myimg {
-  transform: rotateX(0deg) rotateY(-20deg) !important;
-}
-.t-block:nth-child(7):hover ~ .Myimg {
-  transform: rotateX(20deg) rotateY(20deg) rotateZ(1deg) !important;
-}
-.t-block:nth-child(8):hover ~ .Myimg {
-  transform: rotateX(20deg) rotateY(0deg) !important;
-}
-.t-block:nth-child(9):hover ~ .Myimg {
-  transform: rotateX(20deg) rotateY(-20deg) !important;
+.AboutImg {
+  position: relative;
+  visibility: hidden;
+  width: 50%;
+  height: 80%;
 }
 .Typing-effect {
   position: relative;
@@ -120,21 +69,21 @@
 .imgcont {
   position: relative;
 }
-.Myimg::before {
+.AboutImg::before {
   content: '';
   position: absolute;
-  top: 1rem;
-  left: 0;
+  top: -1rem;
+  left: -1rem;
   width: 4rem;
   height: 4rem;
   border-left: 4px solid cyan;
   border-top: 4px solid cyan;
 }
-.Myimg::after {
+.AboutImg::after {
   content: '';
   position: absolute;
-  bottom: 1rem;
-  right: 0;
+  bottom: -1rem;
+  right: -1rem;
   width: 4rem;
   height: 4rem;
   border-right: 4px solid cyan;
@@ -265,8 +214,10 @@
   align-items: center;
   flex-direction: column;
 }
+.right-navbar > a {
+  color: gray !important;
+}
 .item {
-  color: gray;
   padding: 10px;
 }
 .item:hover {
@@ -328,10 +279,21 @@ header li a {
 .Nameis {
   text-align: left;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 400px) {
   .DivideDiv {
     display: block;
   }
+  .AboutImg {
+    width: 80%;
+    height: 50%;
+  }
+  /* .DivideStack {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .aboutme > .DivideDiv {
+    display: inline-block;
+  } */
   nav {
     display: none;
   }
@@ -364,8 +326,18 @@ header li a {
     padding-top: 1rem;
   }
   .projectTitle,
-  .AboutMe {
+  .AboutMe,
+  .aboutme {
     text-align: center;
+  }
+  .TitleDiv {
+    display: flex;
+    align-items: center;
+  }
+  .Nameis,
+  .Typing-effect,
+  .Title {
+    width: 75vw;
   }
   .Title {
     font-size: 3rem;
@@ -390,7 +362,7 @@ header li a {
   .MainHome > .DivideDiv {
     display: grid;
     grid-template-columns: unset;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
   div > h1 > p {
     font-size: 1em !important;
