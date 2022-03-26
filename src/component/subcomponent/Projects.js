@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { gsap } from 'gsap/dist/gsap'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const Projects = ({
   projectName,
@@ -68,7 +69,12 @@ const Projects = ({
       <div className="Project">
         <div className="DivideDiv">
           <div className="ProjectAnimation">
-            <h2 className="Roboto ">{projectName}</h2>
+            <Link href="https://ecommerce-mern-parth1.herokuapp.com/">
+              <a>
+                {' '}
+                <h2 className="Roboto ">{projectName}</h2>{' '}
+              </a>
+            </Link>
             <span className="gray ">
               <spam style={{ fontFamily: 'Fredoka' }}>{Projectinfo}</spam>
               <div className="row">
@@ -86,9 +92,14 @@ const Projects = ({
               data-tilt-max-glare="10"
               className="overlayDiv overlayDiv-Right"
             >
-              <div className="overlay"></div>
-              <div className="BorderOverlay"></div>
-              <img src="./Capture.JPG" alt="" />
+              <Link href="https://ecommerce-mern-parth1.herokuapp.com/">
+                <a>
+                  {' '}
+                  <div className="overlay"></div>
+                  <div className="BorderOverlay"></div>
+                  <img src="./Capture.JPG" alt="" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

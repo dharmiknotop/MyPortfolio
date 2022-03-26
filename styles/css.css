@@ -100,7 +100,13 @@
 .ProjectRAnimation {
   visibility: hidden;
 }
-
+.ProjectAnimation > a:hover {
+  color: cyan;
+  cursor: pointer;
+}
+.aboutme {
+  font-size: 1.4rem;
+}
 .aboutme > p > span,
 .aboutme > span {
   color: cyan;
@@ -288,7 +294,7 @@ header li a {
   align-items: center;
   flex-direction: column;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .About {
     height: 50vh;
   }
@@ -299,7 +305,7 @@ header li a {
     width: 80%;
     height: 80%;
   }
-  .AboutDiv {
+  .aboutme {
     font-size: 1rem;
   }
   /* .DivideStack {

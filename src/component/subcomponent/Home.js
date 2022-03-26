@@ -169,11 +169,7 @@ const Home = () => {
 
           <div className="imgcont TitleDiv container">
             <div className="" style={{ position: 'relative' }}>
-              <div
-                data-tilt
-                data-tilt-full-page-listening
-                className="Myimg"
-              ></div>
+              <div className="Myimg"></div>
             </div>
           </div>
         </div>
