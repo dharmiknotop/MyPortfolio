@@ -1,12 +1,15 @@
+//This component is used To show Project Details on the right side
+import Techicon from './Techicon'
+import Image from 'next/image'
 import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { gsap } from 'gsap/dist/gsap'
-import Techicon from './Techicon'
-import Image from 'next/image'
+import Link from 'next/link'
+
 const RightProjects = ({
   projectName,
   Projectinfo,
-  Projectimage,
+  projectImage,
   projecticon,
   projecticon1,
   projecticon2,
@@ -15,6 +18,7 @@ const RightProjects = ({
   iconname1,
   iconname2,
   iconname3,
+  projectLink,
 }) => {
   useEffect(() => {
     VanillaTilt.init(document.querySelector('.overlayDiv'), {
@@ -72,13 +76,23 @@ const RightProjects = ({
               data-tilt-max-glare="0.8"
               className="overlayDiv overlay-left"
             >
-              <div className="overlay"></div>
-              <div className="BorderOverlay"></div>
-              <img src="/Capture.JPG" width="15rem" height="14rem" />
+              <Link href={{ pathname: projectLink }}>
+                <a>
+                  {' '}
+                  <div className="overlay"></div>
+                  <div className="BorderOverlay"></div>
+                  <img src={projectImage} alt="" />
+                </a>
+              </Link>
             </div>
           </div>
           <div className="  ProjectRAnimation">
-            <h2 className="Roboto ">{projectName}</h2>
+            <Link href={{ pathname: projectLink }}>
+              <a>
+                {' '}
+                <h2 className="Roboto ">{projectName}</h2>{' '}
+              </a>
+            </Link>
             <span className="gray">
               <spam style={{ fontFamily: 'Fredoka' }}>{Projectinfo}</spam>
               <div className="row">

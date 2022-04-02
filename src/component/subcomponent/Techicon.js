@@ -1,3 +1,5 @@
+//  This Component is used to avoid reptative Code for
+//  Showing Framework which is used For making the project
 const Techicon = ({ Techicon1, Techname }) => {
   return (
     <>

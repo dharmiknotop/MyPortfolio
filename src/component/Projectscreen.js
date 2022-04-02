@@ -1,13 +1,13 @@
-import React from 'react'
+//This component is used To show Projects
 import Projects from './subcomponent/Projects'
+import RightProjects from './subcomponent/RightProject'
+
 import { FaReact } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
 import { SiMongodb } from 'react-icons/si'
 import { FaRegLightbulb } from 'react-icons/fa'
-import RightProjects from './subcomponent/RightProject'
+import { SiFirebase } from 'react-icons/si'
 import { SiRedux } from 'react-icons/si'
-import { BsArrowBarRight } from 'react-icons/bs'
-import logo from '../E-commerce.jpg'
 const Projectscreen = () => {
   return (
     <div className="border container">
@@ -17,33 +17,32 @@ const Projectscreen = () => {
       </h1>
       <br />
       <br />
-      <Projects
-        projectName="E-commerces Website"
-        Projectinfo="An E-commrece website which can take payments, Can register Users, Has a Cart. Tech Stack used"
-        Projectimage={logo}
-        projecticon={<FaReact />}
-        projecticon1={<FaNodeJs />}
-        projecticon2={<SiMongodb />}
-        projecticon3={<SiRedux />}
-        iconname="react"
-        iconname1="Nodejs"
-        iconname2="Mongodb"
-        iconname3="Redux"
-      />
-      {/* <Projects
+      <RightProjects
         projectName="E-commerce Website"
-        Projectimage={logo}
         Projectinfo="An E-commrece website which can take payments, Can register Users, Has a Cart. Tech Stack used"
-        Projectimage="https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2020/09/amazon-eCommerce-homepage.png"
         projecticon={<FaReact />}
         projecticon1={<FaNodeJs />}
         projecticon2={<SiMongodb />}
         projecticon3={<SiRedux />}
-        iconname="react"
+        iconname="React"
         iconname1="Nodejs"
         iconname2="Mongodb"
         iconname3="Redux"
-      /> */}
+        projectImage="./Capture.JPG"
+        projectLink="https://ecommerce-mern-parth1.herokuapp.com/"
+      />
+      <Projects
+        projectName="Chatting Website"
+        Projectinfo="Chatting Website In which You can Message People Who registered in website. React is used for the Frontend, Firebase is used for the functionality of the App "
+        projecticon={<FaReact />}
+        projecticon1={<FaNodeJs />}
+        projecticon2={<SiFirebase />}
+        iconname="React"
+        iconname1="Nodejs"
+        iconname2="Firebase"
+        projectImage="./ChattingApp.JPG"
+        projectLink="https://chatting-app-seven.vercel.app/"
+      />
     </div>
   )
 }

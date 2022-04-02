@@ -1,3 +1,4 @@
+//This component is used To show Project on Details on the left side
 import Techicon from './Techicon'
 import { useEffect, useRef } from 'react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
@@ -8,7 +9,7 @@ import Link from 'next/link'
 const Projects = ({
   projectName,
   Projectinfo,
-  Projectimage,
+  projectImage,
   projecticon,
   projecticon1,
   projecticon2,
@@ -17,7 +18,7 @@ const Projects = ({
   iconname1,
   iconname2,
   iconname3,
-  projectname,
+  projectLink,
 }) => {
   gsap.registerPlugin(ScrollTrigger)
   useEffect(() => {
@@ -69,7 +70,7 @@ const Projects = ({
       <div className="Project">
         <div className="DivideDiv">
           <div className="ProjectAnimation">
-            <Link href="https://ecommerce-mern-parth1.herokuapp.com/">
+            <Link href={{ pathname: projectLink }}>
               <a>
                 {' '}
                 <h2 className="Roboto ">{projectName}</h2>{' '}
@@ -92,12 +93,12 @@ const Projects = ({
               data-tilt-max-glare="10"
               className="overlayDiv overlayDiv-Right"
             >
-              <Link href="https://ecommerce-mern-parth1.herokuapp.com/">
+              <Link href={{ pathname: projectLink }}>
                 <a>
                   {' '}
                   <div className="overlay"></div>
                   <div className="BorderOverlay"></div>
-                  <img src="./Capture.JPG" alt="" />
+                  <img src={projectImage} alt="" />
                 </a>
               </Link>
             </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+//This component is used for social media Links
 import { FiLinkedin } from 'react-icons/fi'
 import { FaTwitter } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
